@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tax_rates",
+  "info": {
+    "singularName": "tax-rate",
+    "pluralName": "tax-rates",
+    "displayName": "Tax rate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Taxrate": {
+      "type": "string"
+    }
+  }
+}

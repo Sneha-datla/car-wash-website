@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "vehicle_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vehicle-type.vehicle-type"
+    },
+    "option_value": {
+      "type": "string"
+    },
+    "option_id": {
+      "type": "string"
+    },
+    "tax_rate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tax-rate.tax-rate"
+    }
+  }
+}

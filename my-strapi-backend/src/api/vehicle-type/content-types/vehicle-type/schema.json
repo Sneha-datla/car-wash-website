@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicle_types",
+  "info": {
+    "singularName": "vehicle-type",
+    "pluralName": "vehicle-types",
+    "displayName": "Vehicle Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "tax_rate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tax-rate.tax-rate"
+    }
+  }
+}

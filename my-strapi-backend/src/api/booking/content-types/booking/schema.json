@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "Booking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "BookingDate": {
+      "type": "string"
+    }
+  }
+}
